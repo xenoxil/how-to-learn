@@ -7,12 +7,16 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  padding:0;
 }
-
+.placeholder{height:50px;}
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color:#f2f2f2;
+  display:flex;
+  position:relative;
   /* выше установили ограничения для секции */
 }
 
@@ -20,6 +24,53 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color:#2f80ed;
+  position:absolute;
+  top:64px;
+  right:0;
+}
+.header__title{
+	width:730px;
+	font-size:102px;
+	margin-left:64px;
+	flex-direction:column;
+	align-self:center;
+	background-color:wheat;
+	line-height:96px;
+	font-weight:700;
+	height:200px;
+}
+.header__subtitle{
+	position:absolute;
+	left:64px;
+	bottom:30px;
+	line-height:25px;
+	font-weight:normal;
+	font-size:18px;
+	width:388px;
+}
+.header__main-illustration{
+	height:608px;
+	width:765px;
+	background-image:url(../images/header-image.png);
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:1;
+}
+.logo{
+	background-image:url(../images/logo_place_header.svg);
+	width:183px;
+}
+.logo_place_header{
+position:absolute;
+height:32px;
+top:30px;
+left:64px;
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
