@@ -161,22 +161,26 @@ left:64px;
 	width:100%;
 	background-color:#f2f2f2;
 	position:relative;
-	z-index:-2;
+	z-index:0;
 	}
 .feynman__title{
+	position:relative;
 	width:648px;
 	line-height:1.15;
 	font-size:120px;
 	font-weight:700;
 	margin:100px auto 0;
 	text-align:center;
+	z-index:2;
 	}
 .feynman__subtitle{
+	position:relative;
 	line-height:51px;
 	font-size:36px;
 	font-weight:normal;
 	margin:70px auto 0;
 	width:400px;
+	z-index:2;
 	}
 .feynman__link{
 	position:absolute;
@@ -195,7 +199,7 @@ left:64px;
 	left:0;
 	width:867px;
 	height:637px;
-	z-index:-1;
+	z-index:1;
 }
 .kaufman{
 	overflow: hidden;
