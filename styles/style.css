@@ -114,9 +114,7 @@ left:64px;
 	justify-content:center;
 	margin-bottom:100px;
 	}
-.center_block{
-	margin:0 auto;
-}
+
 .section{
 	width:60%;
 	text-align:center;
@@ -138,6 +136,7 @@ left:64px;
 	flex-direction:row;
 	flex-wrap:wrap;
 	justify-content:space-between;
+	margin:0 auto;
 }
 .table__cell{
 	width:250px;
