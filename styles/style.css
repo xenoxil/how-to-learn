@@ -89,6 +89,7 @@ left:64px;
 	font-size:18px;
 	line-height:1.2;
 	font-weight:normal;
+	margin:0;
 	}
 .two-columns__main-text{
 	min-width:784px;
@@ -100,7 +101,7 @@ left:64px;
 	margin:0;
 	}	
 .two-columns__paragraph{
-	margin-bottom:30px;
+	margin:0 0 30px;
     line-height:34px;
     font-size:24px;
     font-weight:normal;	
@@ -228,7 +229,7 @@ left:64px;
 	z-index:-1;
 }
 
-.section_title_theme_dark{
+.section-title_theme_dark{
 	color: white;
 	line-height:69px;
 	font-size:60px;
@@ -291,11 +292,11 @@ left:64px;
 	font-size:18px;
 	font-weight:normal;
 }
-.footer__column_link{
+.footer__column-link{
 	color:white;
 	text-decoration:none;
 }
-.footer__column_link:hover{
+.footer__column-link:hover{
 	text-decoration:underline;
 }
 .footer__social-icon{
