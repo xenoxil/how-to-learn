@@ -231,17 +231,10 @@ left:64px;
 
 .section-title_theme_dark{
 	color: white;
-	line-height:69px;
-	font-size:60px;
-	font-weight:700;
-	
-}
+	}
 .section-subtitle_theme_dark{
 	color: white;
-	line-height:34px;
-	font-size:24px;
-	font-weight:normal;
-}
+	}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
