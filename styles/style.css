@@ -9,63 +9,10 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   padding:0;
 }
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  background-color:#f2f2f2;
-  display:flex;
-  position:relative;
-  z-index:0;
-  /* выше установили ограничения для секции */
-}
+
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color:#2f80ed;
-  position:absolute;
-  top:64px;
-  right:0;
-  z-index:1;
-}
-.header__title{
-	width:730px;
-	font-size:102px;
-	margin-left:64px;
-	flex-direction:column;
-	align-self:center;
-	line-height:96px;
-	font-weight:700;
-	z-index:3;
-}
-.header__subtitle{
-	position:absolute;
-	left:64px;
-	bottom:30px;
-	line-height:25px;
-	font-weight:normal;
-	font-size:18px;
-	width:388px;
-	z-index:3;
-	margin:0;
-}
-.header__main-illustration{
-	height:608px;
-	width:765px;
-	position:absolute;
-	bottom:0;
-	right:0;
-	z-index:2;
-}
-.header__link{
-	color:#2f80ed;
-	text-decoration:none;
-}
-.header__link:hover{
-	text-decoration:underline;
-}
+
 .logo{
 	background-image:url(../images/logo_place_header.svg);
 	width:183px;
