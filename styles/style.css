@@ -1,252 +1,91 @@
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  padding:0;
-}
+@import url(./blocks/page/page.css);
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__link/header__link.css);
+@import url(./blocks/header/__main-illustration/header__main-illustration.css);
+@import url(./blocks/header/__square-pic/header__square-pic.css);
+@import url(./blocks/rotation/rotation.css);
+@import url(./blocks/header/__subtitle/header__subtitle.css);
+@import url(./blocks/header/__title/header__title.css);
+@import url(./blocks/logo/logo.css);
+
+@import url(./blocks/two-columns/two-columns.css);
+@import url(./blocks/two-columns/__brief/two-columns__brief.css);
+@import url(./blocks/two-columns/__main-text/two-columns__main-text.css);
+@import url(./blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(./blocks/two-columns/__span-acent/two-columns__span-acent.css);
+
+@import url(./blocks/techniques/techniques.css);
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__item/card__item.css);
+@import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/card/__title/card__title.css);
+@import url(./blocks/card/__description/card__description.css);
+
+@import url(./blocks/video/video.css);
+@import url(./blocks/video/__iframes/video__iframes.css);
+@import url(./blocks/video/__iframe/video__iframe.css);
 
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+@import url(./blocks/feynman/feynman.css);
+@import url(./blocks/feynman/__title/feynman__title.css);
+@import url(./blocks/feynman/__subtitle/feynman__subtitle.css);
+@import url(./blocks/feynman/__pic/feynman__pic.css);
+@import url(./blocks/feynman/__link/feynman__link.css);
 
-.logo{
-	background-image:url(../images/logo_place_header.svg);
-	width:183px;
-}
-.logo_place_header{
-position:absolute;
-height:32px;
-top:30px;
-left:64px;
+@import url(./blocks/digits/digits.css);
 
-}
-.two-columns{
-	width:80%;
-	margin:100px auto;
-	display:flex;
-	justify-content:space-between;
-	}
-.two-columns__brief{
-	color:#2f80ed;
-	width:175px;
-	font-size:18px;
-	line-height:1.2;
-	font-weight:normal;
-	margin:0;
-	}
-.two-columns__main-text{
-	min-width:784px;
-	width:80%;
-	flex-direction:column;
-}
-.two-columns__paragraph:last-of-type{
-	margin:0;
-	}	
-.two-columns__paragraph{
-	margin:0 0 30px;
-    line-height:34px;
-    font-size:24px;
-    font-weight:normal;	
-	}
-.two-columns__span-acent{
-	font-weight:700;
-	font-size:24px;
-	line-height:34px;
-}
-.digits{
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	margin-bottom:100px;
-	}
-.section-title{
-	line-height:1.15;
-	font-size:60px;
-	font-weight:700;
-	width:60%;
-	text-align:center;
-	margin:0 auto 20px;
-}
-.section-subtitle{
-	line-height:34px;
-	font-size:24px;
-	font-weight:normal;
-	width:60%;
-	text-align:center;
-	margin:0 auto;
-}
-.table{
-	width:1100px;
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	justify-content:space-between;
-	margin:0 auto;
-	list-style:none;
-	padding-left:0;
-}
-.table__cell{
-	width:250px;
-	margin-top:60px;
-}
-.table__heading{
-	line-height:1.15;
-	font-size:24px;
-	font-weight:700;
-	margin:0 auto;
-}
-.table__text{
-	line-height:1.2;
-	font-size:18px;
-	font-weight:normal;
-	margin:20px auto 0;
-	}
-.table__text_paragraph{
-	margin-top:20px;
-}
-.feynman{
-	min-height:790px;
-	width:100%;
-	background-color:#f2f2f2;
-	position:relative;
-	z-index:0;
-	padding-top:100px;
-	}
-.feynman__title{
-	position:relative;
-	width:648px;
-	line-height:1.15;
-	font-size:120px;
-	font-weight:700;
-	margin:0 auto ;
-	text-align:center;
-	z-index:2;
-	}
-.feynman__subtitle{
-	position:relative;
-	line-height:51px;
-	font-size:36px;
-	font-weight:normal;
-	margin:70px auto 0;
-	z-index:2;
-	text-align:center;
-	}
-.feynman__link{
-	position:absolute;
-	right:48px;
-	top:50%;
-	line-height:51px;
-	font-size:36px;
-	font-weight:normal;
-	color:black;
-	text-decoration:none;
-	z-index:5;	
-}
-.feynman__link:hover{
-	text-decoration:underline;
-}
-.feynman__pic{
-	position:absolute;
-	bottom:0;
-	left:0;
-	width:867px;
-	height:637px;
-	z-index:1;
-}
-.kaufman{
-	overflow: hidden;
-	position:relative;
-	background-color:#1f1f1f;
-	padding-top:90px;
-	padding-bottom:90px;
-	z-index:-2;
-}
-.kaufman__triangle{
-	background-image:url(../images/kaufman-triangle.svg);
-	background-size:cover;
-	width:877px;
-	height:877px;
-	position:absolute;
-	top:0;
-	right:-210px;
-	z-index:-1;
-}
+@import url(./blocks/khan/khan.css);
+@import url(./blocks/khan/__container/khan__container.css);
+@import url(./blocks/khan/__author/khan__author.css);
+@import url(./blocks/khan/__title/khan__title.css);
+@import url(./blocks/khan/__quote/khan__quote.css);
+@import url(./blocks/khan/__quote-author/khan__quote-author.css);
+@import url(./blocks/khan/__quote-author-subline/khan__quote-author-subline.css);
+@import url(./blocks/khan/__book-container/khan__book-container.css);
+@import url(./blocks/khan/__book-pic/khan__book-pic.css);
+@import url(./blocks/khan/__buy-link/khan__buy-link.css);
 
-.section-title_theme_dark{
-	color: white;
-	}
-.section-subtitle_theme_dark{
-	color: white;
-	}
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
 
-.footer{
-	background-color:#1f1f1f;
-	padding-top:60px;
-	padding-bottom:40px;
-	min-height:350px;
-	box-sizing:border-box;
-	}
-.footer__columns{
-	width:90%;
-	margin:0 auto;
-	display:flex;
-	color:white;
-	justify-content:space-between;
-	min-height:250px;
-	}
-.footer__column_content_copyright{
-	flex-basis:711px;
-	flex-direction:column;
-	display:flex;
-	justify-content:space-between;
-}
-.footer__author{
-	margin:18px 0;
-	align-items:flex-end;
-	font-size:18px;
-	line-height:25px;
-	font-weight:normal;
-	align-items:flex-end;
-}
-.footer__column-heading{
-	line-height:30px;
-	font-size:18px;
-	font-weight:700;
-}
-.footer__column-links{
-	list-style:none;
-	padding:0;
-	margin-top:20px;
-	line-height:30px;
-	font-size:18px;
-	font-weight:normal;
-}
-.footer__column-link{
-	color:white;
-	text-decoration:none;
-}
-.footer__column-link:hover{
-	text-decoration:underline;
-}
-.footer__social-icon{
-	width:16px;
-	height:16px;
-}
+@import url(./blocks/section-title/section-title.css);
+@import url(./blocks/section-title/_theme/section-title_theme_dark.css);
 
-.logo_place_footer{
-	background-image:url(../images/logo_place_footer.svg);
-	width:183px;
-	height:35px;
-	
-}
+@import url(./blocks/section-subtitle/section-subtitle.css);
+@import url(./blocks/section-subtitle/_theme/section-subtitle_theme_dark.css);
+
+@import url(./blocks/table/table.css);
+/*@import url(./blocks/table/__text/_paragraph/table__text_paragraph.css);*/
+@import url(./blocks/table/__text/table__text.css);
+@import url(./blocks/table/__text/_theme/table__text_theme_dark.css);
+
+
+@import url(./blocks/table/__heading/table__heading.css);
+@import url(./blocks/table/__cell/table__cell.css);
+
+@import url(./blocks/kaufman/kaufman.css);
+@import url(./blocks/kaufman/__triangle/kaufman__triangle.css);
+
+@import url(./blocks/resources/resources.css);
+@import url(./blocks/resources/__logo-zone/resources__logo-zone.css);
+@import url(./blocks/resources/__logo/resources__logo.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__author/footer__author.css);
+@import url(./blocks/footer/__column_content_copyright/footer__column_content_copyright.css);
+@import url(./blocks/footer/__column-heading/footer__column-heading.css);
+@import url(./blocks/footer/__column-link/footer__column-link.css);
+@import url(./blocks/footer/__column-links/footer__column-links.css);
+@import url(./blocks/footer/__columns/footer__columns.css);
+@import url(./blocks/footer/__logo_place_footer/footer__logo_place_footer.css);
+@import url(./blocks/footer/__social-icon/footer__social-icon.css);
+
+@import url(./blocks/link/link.css);
+@import url(./blocks/oakley/oakley.css);
+
+
+
+
+
+
+
+
