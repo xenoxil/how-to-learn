@@ -1,14 +1,11 @@
-.feynman__link{
-	position:absolute;
-	right:48px;
-	top:50%;
-	line-height:51px;
-	font-size:36px;
-	font-weight:normal;
-	color:black;
-	text-decoration:none;
-	z-index:5;	
-}
-.feynman__link:hover{
-	text-decoration:underline;
+.feynman__link {
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    z-index: 5;
 }
